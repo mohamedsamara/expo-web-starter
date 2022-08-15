@@ -1,20 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+// import { RootNavigator } from "../../lib/navigation/root-navigator";
+import { RootNavigator } from "../../lib/navigation/root-navigator.web";
+import { Provider } from "../../lib/provider";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>WEB: Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Provider>
+      <RootNavigator />
+    </Provider>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+{
+  /* <StatusBar style="auto" /> */
+}
