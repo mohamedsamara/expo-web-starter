@@ -1,8 +1,6 @@
-import { useSx, View, H1, P, Row, A } from "dripsy";
+import { View, H1 } from "dripsy";
 
 const Home = () => {
-  const sx = useSx();
-
   return (
     <View
       sx={{
@@ -12,7 +10,7 @@ const Home = () => {
         p: 16,
       }}
     >
-      <H1 sx={{ fontWeight: "800" }}>Welcome to Expo Web Starter.</H1>
+      <H1>Welcome to Expo Web Starter.</H1>
     </View>
   );
 };
